@@ -63,12 +63,18 @@ def saludo():
     # Saluda al usuario de acuerdo a la hora actual
     
     hour = datetime.now().hour
-    if (hour >= 6) and (hour < 12):
+    if (hour >= 1) and (hour < 12):
+        print(f"Buenos días apreciado usuario")
         talk(f"Buenos días apreciado usuario")
-    elif (hour >= 12) and (hour < 16):
+
+    elif (hour >= 12) and (hour < 18):
+        print(f"Buenas tardes apreciado usuario")
         talk(f"Buenas tardes apreciado usuario")
-    elif (hour >= 16) and (hour < 19):
+    elif (hour >= 18) and (hour < 24):
+        print(f"Buenas noches apreciado usuario")
         talk(f"Buenas noches apreciado usuario")
+
+    print(f"Mi nombre es {name}. , como puedo ayudarte?")
     talk(f"Mi nombre es {name}. , como puedo ayudarte?")
 
 def run_alexa():
