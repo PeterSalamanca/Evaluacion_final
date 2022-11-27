@@ -1,5 +1,6 @@
 import speech_recognition as sr
 import pyttsx3, pywhatkit, wikipedia, datetime
+from datetime import date, time, datetime
 from random import choice
 import subprocess as sp
 import cv2
