@@ -136,7 +136,7 @@ def run_alexa():
 
         elif "fecha actual" in rec:
             talk(choice(opening_text))
-            tiempo = datetime.datetime.now()
+            tiempo = datetime.now()
             
             print("La fecha actual es: "+ tiempo.strftime("%d/%m/%Y %H:%M:%S"))
             talk("La fecha actual es: "+ tiempo.strftime("%d/%m/%Y %H:%M:%S"))
@@ -154,7 +154,7 @@ def run_alexa():
 
 
         elif "salir" or "detener" in rec:
-            hora = datetime.datetime.now().hour
+            hora = hora = datetime.now().hour
             if hora >= 18 and hora < 24:
                 talk("Que tenga una buena noche, cuidese!")
             else:
