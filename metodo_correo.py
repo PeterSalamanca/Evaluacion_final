@@ -4,6 +4,8 @@ from email.message import EmailMessage
 
 # Se define los datos del correo de origen, que envia el mensaje
 email_sender = 'pruebapython0@gmail.com'
+# Enlace de youtube en donde explican como obtener la contraseña 
+# https://www.youtube.com/watch?v=DDVpKvJXRz8&ab_channel=ThePyCoach
 email_password = 'bbbezeogdykfzfqi'
 
 
