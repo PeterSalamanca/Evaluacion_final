@@ -1,9 +1,11 @@
 import speech_recognition as sr
 import pyttsx3, pywhatkit, wikipedia, datetime
-from datetime import date, time, datetime
-from random import choice
 import subprocess as sp
 import cv2
+
+
+from datetime import date, time, datetime
+from random import choice
 from metodo_correo import send_email
 
 
@@ -74,8 +76,10 @@ def saludo():
         print(f"Buenas noches apreciado usuario")
         talk(f"Buenas noches apreciado usuario")
 
-    print(f"Mi nombre es {name}. , como puedo ayudarte?")
-    talk(f"Mi nombre es {name}. , como puedo ayudarte?")
+    print(f"Mi nombre es {name}., como puedo ayudarte?")
+    talk(f"Mi nombre es {name}., como puedo ayudarte?")
+    
+
 
 def run_alexa():
     while True:
@@ -150,7 +154,7 @@ def run_alexa():
 
         elif "salir" or "detener" in rec:
             hora = datetime.datetime.now().hour
-            if hora >= 21 and hora < 6:
+            if hora >= 18 and hora < 24:
                 talk("Que tenga una buena noche, cuidese!")
             else:
                 talk('Que tenga un buen día, vuelva pronto')
