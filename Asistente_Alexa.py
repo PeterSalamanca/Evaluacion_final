@@ -138,6 +138,7 @@ def run_alexa():
             talk(choice(opening_text))
             tiempo = datetime.datetime.now()
             
+            print("La fecha actual es: "+ tiempo.strftime("%d/%m/%Y %H:%M:%S"))
             talk("La fecha actual es: "+ tiempo.strftime("%d/%m/%Y %H:%M:%S"))
 
         elif "enviar un correo" in rec:
