@@ -141,13 +141,15 @@ def run_alexa():
             print("La fecha actual es: "+ tiempo.strftime("%d/%m/%Y %H:%M:%S"))
             talk("La fecha actual es: "+ tiempo.strftime("%d/%m/%Y %H:%M:%S"))
 
-        elif "enviar un correo" in rec:
+         elif "enviar un correo" in rec:
             talk("A que correo desea enviar el mensaje? Por favor ingreselo en la consola: ")
             email_receiver = input("Dirección de correo destino: ")
             talk("Por favor indique el asunto ")
             subject = listen().lower()
+            print(subject)
             talk("Por favor indique el mensaje a enviar: ")
             body = listen().lower()
+            print(body)
             send_email(email_receiver, subject, body)
             talk("He enviado el correo, apreciado usuario.")
             
